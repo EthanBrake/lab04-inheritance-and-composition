@@ -25,3 +25,15 @@ print("\(queue)")
 print("Putting item: \(str2)")
 queue.put(object: str2)
 print("\(queue)")
+
+var stack: Stack = Stack(list: list)
+print("\n\(stack)")
+
+if let item2 = stack.pop() {
+    print("Popped item: \(item2 as! String)")
+}
+print("\(stack)")
+
+print("Pushing item: \(str2)")
+stack.push(object: str2)
+print("\(stack)")

@@ -28,6 +28,7 @@ class Queue : LinkedList {
      Puts an an object at the end of the queue
      
      - parameter object: Object to put in the queue.
+     - Put inserts an object at the tail end of the list
      */
     func put(object: Any) {
         // Use inherited method to add object
@@ -40,6 +41,7 @@ class Queue : LinkedList {
      
      - returns: Any? Object removed from the start of the queue,
      nil if queue is empy.
+     - Get removes objects from the head of the list
      */
     func get() -> Any? {
         // If head points to a non-nil node,
