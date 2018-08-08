@@ -37,3 +37,17 @@ print("\(stack)")
 print("Pushing item: \(str2)")
 stack.push(object: str2)
 print("\(stack)")
+
+var array: Array = Array(list: list)
+print("\n\(array)")
+
+
+print("Setting array[2] to \(str1)")
+array.setObject(object: str1, at: 2)
+print("\(array)")
+
+print("Sorting array");
+array.sort(isObject: { o1, o2 in (o1 as! String) < (o2 as! String) })
+for index in 0..<array.count {
+    print("array[\(index)]=\(array.getObject(index: index))")
+}

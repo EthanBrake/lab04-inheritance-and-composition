@@ -10,7 +10,6 @@ import Foundation
 
 
 //Stack is last-in-first-out, can be seen as a linked list implementing push and pop methods
-//Push inserts objects at list's tail and pop removes objects at the tail.
 
 class Stack : LinkedList {
     
@@ -18,11 +17,16 @@ class Stack : LinkedList {
         return "(Stack)"+super.description+"<-->"
     }
     
+    /*
+     -Push inserts objects at list's tail
+     */
     func push(object: Any){
         
         self.add(object: object);
     }
-    
+    /*
+     pop removes objects at the tail.
+     */
     func pop() -> Any? {
         if let n = tail{
             self.remove(node: n)
